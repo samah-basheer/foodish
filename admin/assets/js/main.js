@@ -15,3 +15,13 @@ sidebarToggle.addEventListener("click", () => {
         localStorage.setItem("status", "open");
     }
 })
+
+let menu_ul = document.querySelector('.menu-items ul');
+let menu_li = document.querySelectorAll('.menu-items ul li');
+
+menu_li.forEach( el => {
+    el.addEventListener('click', function () {
+        menu_ul.querySelector('.active').classList.remove('active');
+        el.classList.add('active');
+    });
+});
