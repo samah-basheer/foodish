@@ -1348,3 +1348,6 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
     border-radius: 100%;
     color: var(--panel-color);
 }
+.title h1 {
+    font-size: 24px;
+}
