@@ -1240,3 +1240,15 @@ nav .menu-items {
 .dashboard .top-bar i.fa.fa-bars {
     font-size: 26px;
 }
+/* Close */
+nav.close{
+    width: 73px;
+}
+nav.close .logo_name, nav.close li a .link-name{
+    opacity: 0;
+    pointer-events: none;
+}
+nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
+    left: 73px;
+    width: calc(100% - 73px);
+}
