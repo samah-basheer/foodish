@@ -1208,7 +1208,10 @@ nav .menu-items {
     color: var(--black-light-color);
     transition: var(--tran-05);
 }
-.nav-links li a:hover i, .nav-links li a:hover .link-name {
+.nav-links li a:hover i,
+.nav-links li a:hover .link-name,
+.logout li a:hover i,
+.logout li a:hover .link-name {
     color: var(--primary-color);
 }
 
