@@ -1336,3 +1336,13 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
         width: 100%;
     }
 }
+.admin {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    color: var(--panel-color);
+}

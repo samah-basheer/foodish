@@ -47,6 +47,9 @@
 <section class="dashboard">
     <div class="top-bar d-flex">
         <i class="fa fa-bars sidebar-toggle" aria-hidden="true"></i>
+        <div class="admin">
+            A
+        </div>
     </div>
 </section>
 
