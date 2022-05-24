@@ -1,39 +1,54 @@
 <?php include_once 'includes/header.php' ?>
 
 <nav>
-    <div class="logo-name">
-        <div class="logo-image">
+    <div class="logo-name d-flex">
+        <div class="logo-image d-flex">
             <img src="./assets/img/logo.png">
         </div>
         <span class="logo_name">Zomato</span>
     </div>
-    <div class="menu-items">
+    <div class="menu-items d-flex">
         <ul class="nav-links list-style-none">
             <li>
-                <i class="fa fa-tachometer" aria-hidden="true"></i>
-                <a href="#">Dashboard</a>
+                <a href="#">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a>
             </li>
             <li>
-                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                <a href="#">Restaurants</a>
+                <a href="#">
+                    <i class="fa fa-cutlery" aria-hidden="true"></i>
+                    <span class="link-name">Restaurants</span>
+                </a>
             </li>
             <li>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <a href="#">Reviews</a>
+                <a href="#">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span class="link-name">Reviews</span>
+                </a>
             </li>
             <li>
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <a href="#">Users</a>
+                <a href="#">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span class="link-name">Users</span>
+                </a>
             </li>
         </ul>
         <ul class="logout list-style-none">
             <li>
-                <i class="fa fa-sign-out" aria-hidden="true"></i>
-                <a href="#">Logout</a>
+                <a href="#">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <span class="link-name">Logout</span>
+                </a>
             </li>
         </ul>
     </div>
 </nav>
+<section class="dashboard">
+    <div class="top-bar d-flex">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+</section>
 
 <?php include_once 'includes/footer.php' ?>
 
