@@ -1211,7 +1211,9 @@ nav .menu-items {
 .nav-links li a:hover i,
 .nav-links li a:hover .link-name,
 .logout li a:hover i,
-.logout li a:hover .link-name {
+.logout li a:hover .link-name,
+li.active a i,
+li.active a .link-name {
     color: var(--primary-color);
 }
 

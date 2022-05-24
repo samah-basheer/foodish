@@ -9,7 +9,7 @@
     </div>
     <div class="menu-items d-flex">
         <ul class="nav-links list-style-none">
-            <li>
+            <li class="active">
                 <a href="#">
                     <i class="fa fa-tachometer" aria-hidden="true"></i>
                     <span class="link-name">Dahsboard</span>
