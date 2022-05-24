@@ -7,7 +7,7 @@
     </div>
     <div class="menu-items d-flex">
         <ul class="nav-links list-style-none">
-            <li class="active">
+            <li>
                 <a href="/admin/pages/dashboard.php">
                     <i class="fa fa-tachometer" aria-hidden="true"></i>
                     <span class="link-name">Dahsboard</span>

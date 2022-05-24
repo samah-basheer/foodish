@@ -16,12 +16,15 @@ sidebarToggle.addEventListener("click", () => {
     }
 })
 
-let menu_ul = document.querySelector('.menu-items ul');
-let menu_li = document.querySelectorAll('.menu-items ul li');
+setActivePath=function() {
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('.menu-items li a');
+    const menuLength = menuItem.length;
 
-menu_li.forEach( el => {
-    el.addEventListener('click', function () {
-        menu_ul.querySelector('.active').classList.remove('active');
-        el.classList.add('active');
-    });
-});
+    for (let i = 0; i < menuLength; i++) {
+        if(menuItem[i].href === currentLocation) {
+            menuItem[i].closest('li').className = 'active';
+        }
+    }
+};
+setActivePath();
