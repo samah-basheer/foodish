@@ -1,9 +1,14 @@
 <?php include_once 'includes/header.php' ?>
 
 <nav>
-    <div class="logo-name">Zomato</div>
+    <div class="logo-name">
+        <div class="logo-image">
+            <img src="./assets/img/logo.png">
+        </div>
+        <span class="logo_name">Zomato</span>
+    </div>
     <div class="menu-items">
-        <ul class="nav-links">
+        <ul class="nav-links list-style-none">
             <li>
                 <i class="fa fa-tachometer" aria-hidden="true"></i>
                 <a href="#">Dashboard</a>
@@ -21,7 +26,7 @@
                 <a href="#">Users</a>
             </li>
         </ul>
-        <ul class="logout">
+        <ul class="logout list-style-none">
             <li>
                 <i class="fa fa-sign-out" aria-hidden="true"></i>
                 <a href="#">Logout</a>
