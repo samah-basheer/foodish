@@ -501,6 +501,9 @@ select {
 .justify-space-between {
     justify-content: space-between;
 }
+.w-100 {
+    width: 100%;
+}
 
 .row {
     --bs-gutter-x: 1.5rem;

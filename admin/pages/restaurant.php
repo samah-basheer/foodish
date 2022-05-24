@@ -6,13 +6,13 @@
         </div>
     </div>
     <div class="container restaurant-loop">
-        <div class="row mb-1">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-1">
                 <div class="restaurant d-flex">
                     <div>
                         <img src="../assets/img/logo.png">
                     </div>
-                    <div class="pl-1">
+                    <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
                             <h3>Abo Bahij</h3>
                             <div>
@@ -29,12 +29,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-1">
                 <div class="restaurant d-flex">
                     <div>
                         <img src="../assets/img/logo.png">
                     </div>
-                    <div class="pl-1">
+                    <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
                             <h3>Abo Bahij</h3>
                             <div>
@@ -52,13 +52,13 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-1">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-1">
                 <div class="restaurant d-flex">
                     <div>
                         <img src="../assets/img/logo.png">
                     </div>
-                    <div class="pl-1">
+                    <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
                             <h3>Abo Bahij</h3>
                             <div>
@@ -75,12 +75,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-1">
                 <div class="restaurant d-flex">
                     <div>
                         <img src="../assets/img/logo.png">
                     </div>
-                    <div class="pl-1">
+                    <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
                             <h3>Abo Bahij</h3>
                             <div>
