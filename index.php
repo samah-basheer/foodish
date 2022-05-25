@@ -19,6 +19,12 @@
           </ul>
         </div>
         <div class="middle-header"><h1>Restaurants and more,<br> delivered to your door</h1></div>
+        <div class="content-container">
+          <div class="corner-text">
+            <h2>Every Flavor Welcome</h2>
+            
+          </div>
+        </div>
     </div>
   </body>
 </html>
