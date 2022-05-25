@@ -34,6 +34,13 @@
         <p class="rider-text"> you'll make reliable money—working</p>
         <p class="rider-text">anytime, anywhere</p>
       </div>
+      <div class="rider">
+        <img src="assets/images/store.png">
+        <h2 class="rider-header">Become a Partner<h2>
+        <p class="rider-text">Grow your business and reach</p>
+        <p class="rider-text">new customers by partnering</p>
+        <p class="rider-text">with us.</p>
+      </div>
     </div>
   </body>
 </html>
