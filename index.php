@@ -11,8 +11,11 @@
     <div class="section-1">
         <div class="top-nav">
           <ul class="links">
-          <a class="hyperlink" href="wwww.google.com">About Us</a>
-          <a class="hyperlink" href="wwww.google.com">Log In</a>    
+            <li><a class="hyperlink" href="wwww.google.com">About Us</a></li>
+            <li><a class="hyperlink" href="wwww.google.com">Log In</a></li>
+            <li>
+            <button class="sign-up">Sign Up</button>
+            </li>    
           </ul>
         </div>
     </div>
