@@ -22,7 +22,7 @@
         <div class="content-container">
           <div class="corner-text">
             <h2>Every Flavor Welcome</h2>
-            
+            <p> From your neighborhood sushi spot to the burger and fries you crave, choose from over 300,000 local and national favorites across the U.S., Canada and Australia.</p>
           </div>
         </div>
     </div>
