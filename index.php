@@ -26,5 +26,14 @@
           </div>
         </div>
     </div>
+    <div class="section-2">
+    <div class="rider">
+        <img src="assets/images/rider.png">
+        <h2 class="rider-header">Become a Dasher<h2>
+        <p class="rider-text">As a delivery driver</p>
+        <p class="rider-text"> you'll make reliable money—working</p>
+        <p class="rider-text">anytime, anywhere</p>
+      </div>
+    </div>
   </body>
 </html>
