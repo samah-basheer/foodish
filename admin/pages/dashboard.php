@@ -5,4 +5,7 @@
             <h1>Dashboard</h1>
         </div>
     </div>
+    <div>
+        Welcome Back!
+    </div>
 <?php include '../includes/footer.php' ?>
