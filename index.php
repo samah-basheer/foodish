@@ -8,6 +8,13 @@
     <title></title>
   </head>
   <body>
-    <div class=""
+    <div class="section-1">
+        <div class="top-nav">
+          <ul class="links">
+          <a class="hyperlink" href="wwww.google.com">About Us</a>
+          <a class="hyperlink" href="wwww.google.com">Log In</a>    
+          </ul>
+        </div>
+    </div>
   </body>
 </html>
