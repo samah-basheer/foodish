@@ -1388,3 +1388,36 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
 .edit-icon, .trash-icon {
     font-size: 18px;
 }
+.initial-name > div {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    color: white;
+}
+.reviews-loop .fa-check {
+    color: rgb(36, 150, 63);
+}
+.reviews-loop .fa-times {
+    color: var(--primary-color);
+}
+.reviews-loop .fa-check, .reviews-loop .fa-times {
+    font-size: 25px;
+    cursor: pointer;
+}
+.restaurant-name {
+    color: var(--primary-color);
+}
+.review-stars {
+    font-size: 11px;
+}
+.reviews-loop .fa-star {
+    color: #d3d3d3;
+}
+.checked {
+    color: orange!important;
+}
