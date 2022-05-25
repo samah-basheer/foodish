@@ -1180,7 +1180,6 @@ nav .logo-image {
 nav .logo-image img {
     width: 40px;
     object-fit: cover;
-    border-radius: 50%;
 }
 nav .logo-name .logo_name {
     font-size: 22px;
