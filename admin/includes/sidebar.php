@@ -3,7 +3,7 @@
         <div class="logo-image d-flex">
             <img src="../assets/img/logo.png">
         </div>
-        <span class="logo_name">Zomato</span>
+        <span class="logo_name">Foodish</span>
     </div>
     <div class="menu-items d-flex">
         <ul class="nav-links list-style-none">
