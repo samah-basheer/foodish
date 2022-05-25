@@ -18,6 +18,7 @@
             </li>    
           </ul>
         </div>
+        <div class="middle-header"><h1>Restaurants and more,<br> delivered to your door</h1></div>
     </div>
   </body>
 </html>
