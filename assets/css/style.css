@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+html, body{
+  overflow-x:hidden;
+}
 .section-1 {
   background: url("../images/background.JPG");
   background-size: cover;
@@ -100,26 +103,24 @@ font-size: 20px;
 
 
 
-@media (max-width:1000px) {
+@media (max-width:750px) {
   .links{
-    margin-left: 30vw;
-    margin-right: 5vw;
-    margin-top: 3vh;
+    margin: 0 auto;
   }
 
   .middle-header{
     margin-top: 10vh;
-    font-size: 20px;
+    font-size: 15px;
     white-space: nowrap;
   }
   
   .hyperlink{
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .content-container{
     padding: 20vh 0 8vh 0;
-    width:50%;
+    width:70%;
     margin-left:1vw;
   }
 
@@ -130,6 +131,10 @@ font-size: 20px;
 
   .rider{
       flex: 0 0 100%;
+  }
+
+  .corner-text{
+    font-size: 20px;
   }
 
 
