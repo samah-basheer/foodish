@@ -89,6 +89,7 @@ html, body{
 
 .rider{
   margin-top: 8vh;
+  margin-bottom: 2vh;
   font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: center;
 }
@@ -124,6 +125,7 @@ html, body{
 .section-3 > img {
  width: 50%;
  height:50%;
+ margin-top: 2vh;
 }
 
 .wrapper {
