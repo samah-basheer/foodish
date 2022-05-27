@@ -1,8 +1,9 @@
 <?php
 include("../connection.php");
-$query = $mysqli->prepare("SELECT R.id, name, description, open_hr, close_hr, pic_url, location 
-FROM restaurants R, locations L 
-WHERE R.id = L.restaurant_id");
+$query = $mysqli->prepare("SELECT U.first_name, U.last_name, R.name, review, rating 
+FROM restaurants R, users U, reviews RV
+WHERE R.id = RV.restaurant_id
+AND RV.user_id = U.id");
 $query->execute();
 $array = $query->get_result();
 $response = [];
