@@ -110,6 +110,13 @@ html, body{
 
 }
 
+.hyperlink2{
+  color:rgb(235, 23, 0);
+  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-decoration: none;
+  font-size: 19px;
+}
+
 .section-3 {
   width:100%;
   height: auto;
