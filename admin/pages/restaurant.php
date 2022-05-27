@@ -42,7 +42,7 @@
                                 ?>
                             </span>
                             <span>|</span>
-                            <span class="reviews">4.5 <i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="reviews">0 <i class="fa fa-star" aria-hidden="true"></i></span>
                         </div>
                     </div>
                 </div>
