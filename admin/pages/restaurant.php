@@ -5,8 +5,6 @@
             <h1>Restaurants</h1>
         </div>
     </div>
-    <div class="container restaurant-loop" id="restaurants">
-
-    </div>
+    <div class="container restaurant-loop" id="restaurants"></div>
 
 <?php include '../includes/footer.php' ?>
