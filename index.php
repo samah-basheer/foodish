@@ -53,5 +53,13 @@
         <p class="rider-text">stores, and more.</p>
       </div>
     </div>
+    <div class="section-4">
+      <img src="assets/images/food.png">
+      <div class="wrapper">
+      <h2 class="rider-header">International Cuisines<h2>
+        <p class="rider-text">We have different kinds of food</p>
+        <p class="rider-text">From all over the world.</p>
+      </div>
+    </div>
   </body>
 </html>

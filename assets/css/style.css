@@ -128,7 +128,6 @@ html, body{
   gap: 8vw;
 }
 
-
 .section-3 > img {
   width: 50%;
   height:50%;
@@ -139,6 +138,22 @@ html, body{
   text-align: center;
 }
 
+.section-4 {
+  margin-top:4vh;
+  width:100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.section-4 > img {
+  width: 50%;
+  height:50%;
+  margin-top: 2vh;
+}
 
 
 @media (max-width:750px) {
@@ -176,6 +191,10 @@ html, body{
   }
 
   .section-3 > img{
+    width:70%;
+  }
+
+  .section-4 > img{
     width:70%;
   }
 }
