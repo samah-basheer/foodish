@@ -170,6 +170,7 @@ html, body{
 .social-media{
   display: flex;
   gap: 2vw;
+  white-space: nowrap;
 
 }
 
@@ -213,5 +214,9 @@ html, body{
 
   .section-4 > img{
     width:70%;
+  }
+
+  .footer{
+    gap:40px;
   }
 }
