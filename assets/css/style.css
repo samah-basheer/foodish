@@ -118,14 +118,14 @@ html, body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 5vw;
+  gap: 8vw;
 }
 
 
 .section-3 > img {
- width: 50%;
- height:50%;
- margin-top: 2vh;
+  width: 50%;
+  height:50%;
+  margin-top: 2vh;
 }
 
 .wrapper {
