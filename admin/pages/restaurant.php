@@ -11,6 +11,11 @@
         $jsonurl = "http://groupproject/backend/api/get_restaurants.php";
         $json = file_get_contents($jsonurl);
         $rest_arr = (json_decode($json));
+
+        $jsonurlRating = "http://groupproject/backend/api/get_ratings.php";
+        $jsonRating = file_get_contents($jsonurlRating);
+        $rating_arr = (json_decode($jsonRating));
+
         $i = 0;
         $current_time = date("H:i:s");
 
@@ -42,7 +47,18 @@
                                 ?>
                             </span>
                             <span>|</span>
-                            <span class="reviews">0 <i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="reviews"><?php
+                                $rating_exist = false;
+                                foreach ($rating_arr as $rating) {
+                                    if($rating->restaurant_id == $rest->id) {
+                                        echo number_format($rating->rating, 1);
+                                        $rating_exist = true;
+                                    }
+                                }
+                                if ($rating_exist == false ) {
+                                    echo 0;
+                                }
+                                ?> <i class="fa fa-star" aria-hidden="true"></i></span>
                         </div>
                     </div>
                 </div>
