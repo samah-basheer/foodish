@@ -12,6 +12,7 @@
         $json = file_get_contents($jsonurl);
         $rest_arr = (json_decode($json));
         $i = 0;
+        $current_time = date("H:i:s");
 
         foreach ($rest_arr as $rest) {
             if($i % 2 == 0) echo '</div><div class="row">';
@@ -31,7 +32,15 @@
                         </div>
                         <p><?php echo $rest->description ?></p>
                         <div class="text-right">
-                            <span class="status">open now</span>
+                            <span class="status">
+                                <?php
+                                if($rest->open_hr < $current_time && $current_time < $rest->close_hr) {
+                                    echo 'Open now';
+                                } else {
+                                    echo 'closed';
+                                }
+                                ?>
+                            </span>
                             <span>|</span>
                             <span class="reviews">4.5 <i class="fa fa-star" aria-hidden="true"></i></span>
                         </div>
