@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="section-2">
-    <div class="rider">
+      <div class="rider">
         <img src="assets/images/rider.png">
         <h2 class="rider-header">Become a Dasher<h2>
         <p class="rider-text">As a delivery driver</p>
@@ -40,6 +40,15 @@
         <p class="rider-text">Grow your business and reach</p>
         <p class="rider-text">new customers by partnering</p>
         <p class="rider-text">with us.</p>
+      </div>
+    </div>
+    <div class="section-3">
+      <img src="assets/images/all_in_one.png">
+      <div class="wrapper">
+      <h2 class="rider-header">It's all in here<h2>
+        <p class="rider-text">Discover local, on-demand delivery or Pickup</p>
+        <p class="rider-text">from restaurants, nearby grocery and convenience</p>
+        <p class="rider-text">stores, and more.</p>
       </div>
     </div>
   </body>
