@@ -33,6 +33,7 @@
         <p class="rider-text">As a delivery driver</p>
         <p class="rider-text"> you'll make reliable money—working</p>
         <p class="rider-text">anytime, anywhere</p>
+        <a href="" class="hyperlink2">Get started here</a>
       </div>
       <div class="rider">
         <img src="assets/images/store.png">
@@ -40,7 +41,7 @@
         <p class="rider-text">Grow your business and reach</p>
         <p class="rider-text">new customers by partnering</p>
         <p class="rider-text">with us.</p>
-        <a href="" class="hyperlink2">Get started here</a>
+        <a href="" class="hyperlink2">Partner with us</a>
       </div>
     </div>
     <div class="section-3">
@@ -50,7 +51,6 @@
         <p class="rider-text">Discover local, on-demand delivery or Pickup</p>
         <p class="rider-text">from restaurants, nearby grocery and convenience</p>
         <p class="rider-text">stores, and more.</p>
-        <a href="" class="hyperlink2">Partner with us</a>
       </div>
     </div>
   </body>
