@@ -30,9 +30,14 @@
                     <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
                             <h3><?php echo $rest->name ?></h3>
-                            <div>
+                            <div class="actions d-flex align-items">
                                 <i class="fa fa-pencil-square-o edit-icon" aria-hidden="true"></i>
-                                <i class="fa fa-trash-o trash-icon" aria-hidden="true"></i>
+                                <form action="../../backend/api/delete_restaurant.php" method="post">
+                                    <input type="hidden" name="id" value="<?php echo  $rest->id; ?>">
+                                    <button type="submit" style="border: 0; background: none;">
+                                        <i class="fa fa-trash-o trash-icon" aria-hidden="true" name=""></i>
+                                    </button>
+                                </form>
                             </div>
                         </div>
                         <p><?php echo $rest->description ?></p>

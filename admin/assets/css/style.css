@@ -1420,3 +1420,6 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
 .checked {
     color: orange!important;
 }
+.actions i {
+    margin-left: 7px;
+}

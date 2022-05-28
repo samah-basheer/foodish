@@ -15,6 +15,6 @@ if($query->execute()) {
     $response["success"] = false;
 
 }
-echo json_encode($response);
+header('Location: http://groupproject/admin/pages/restaurant.php');
 
 ?>
