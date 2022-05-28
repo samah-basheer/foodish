@@ -35,7 +35,7 @@
                                 <form action="../../backend/api/delete_restaurant.php" method="post">
                                     <input type="hidden" name="id" value="<?php echo  $rest->id; ?>">
                                     <button type="submit">
-                                        <i class="fa fa-trash-o trash-icon" aria-hidden="true" name=""></i>
+                                        <i class="fa fa-trash-o trash-icon" aria-hidden="true"></i>
                                     </button>
                                 </form>
                             </div>
