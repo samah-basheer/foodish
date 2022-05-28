@@ -10,6 +10,9 @@
         $jsonurl = "http://groupproject/backend/api/get_users.php";
         $json = file_get_contents($jsonurl);
         $users_arr = (json_decode($json));
+        if(empty($users_arr)) {
+            echo 'You have no users.';
+        }
 
         foreach ($users_arr as $user) {
         ?>

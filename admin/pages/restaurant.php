@@ -19,6 +19,10 @@
         $i = 0;
         $current_time = date("H:i:s");
 
+        if(empty($rest_arr)) {
+            echo 'You have no restaurants.';
+        }
+
         foreach ($rest_arr as $rest) {
             if($i % 2 == 0) echo '</div><div class="row">';
             ?>
