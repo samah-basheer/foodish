@@ -9,7 +9,7 @@ $rest_details = (json_decode($json));
 
 <div class="pt-5">
     <div class="container restaurant-detail">
-        <form action="../../backend/api/edit_restaurant.php" method="post">
+        <form action="../../backend/api/edit_restaurant.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo $rest_details[0]->id; ?>">
             <div class="mb-2">
                 <label>Edit Restaurant Title</label>
