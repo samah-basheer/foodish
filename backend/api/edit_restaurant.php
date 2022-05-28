@@ -2,12 +2,12 @@
 
 include("../connection.php");
 
+$id = $_POST['id'];
 $name = $_POST["name"];
 $description = $_POST["description"];
 $open_hr = $_POST["open_hr"];
 $close_hr = $_POST["close_hr"];
-$pic_url = $_POST["pic_url"];
-$id = $_POST['id'];
+$pic_url = $_FILES["pic_url"]["name"];
 
 $query = $mysqli->prepare("UPDATE restaurants 
 SET name=?, description=?, open_hr=?, close_hr=?, pic_url=?
