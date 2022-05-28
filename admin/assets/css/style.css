@@ -411,7 +411,6 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit
 }
@@ -1430,4 +1429,33 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
 }
 .user-name {
     text-transform: capitalize;
+}
+.restaurant-detail img {
+    max-width: 100%;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+.restaurant-detail textarea {
+    width: 100%;
+    max-width: 100%;
+}
+.restaurant-detail input[type=text] {
+    height: 1.7em;
+}
+.restaurant-detail input[type=text], .restaurant-detail textarea {
+    padding: 3px 8px;
+    font-size: 1.7em;
+    line-height: 100%;
+    width: 100%;
+    outline: 0;
+    margin: 0 0 3px;
+    background-color: #f0f0f1;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    color: #2c3338;
+}
+.restaurant-detail label {
+    font-size: 14px;
 }

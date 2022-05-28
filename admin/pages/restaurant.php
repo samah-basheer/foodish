@@ -35,7 +35,10 @@
                         <div class="d-flex justify-space-between align-items">
                             <h3><?php echo $rest->name ?></h3>
                             <div class="actions d-flex align-items">
-                                <i class="fa fa-pencil-square-o edit-icon" aria-hidden="true"></i>
+                                <?php $id = $rest->id; ?>
+                                <a href="../pages/restaurant_details.php?id=<?php echo $id; ?>" target="_blank">
+                                    <i class="fa fa-pencil-square-o edit-icon" aria-hidden="true"></i>
+                                </a>
                                 <form action="../../backend/api/delete_restaurant.php" method="post">
                                     <input type="hidden" name="id" value="<?php echo  $rest->id; ?>">
                                     <button type="submit">
