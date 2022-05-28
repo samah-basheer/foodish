@@ -18,7 +18,7 @@ $rest_details = (json_decode($json));
                 <div class="col-md-8">
                     <label>Edit Restaurant Description</label>
                     <textarea rows="11"><?php echo $rest_details[0]->description ?></textarea>
-                    <div class="mb-1">
+                    <div class="mb-1 mt-2">
                         <label>Edit Restaurant Open Hour</label>
                         <input type="time" value="<?php echo $rest_details[0]->open_hr ?>">
                     </div>
