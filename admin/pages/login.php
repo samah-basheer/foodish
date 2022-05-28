@@ -18,14 +18,15 @@
             <div class="form login">
                 <span class="title">Login</span>
 
-                <form action="#">
+                <form action="../../backend/api/admin_login.php" method="post">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required />
+                        <input type="text" placeholder="Enter your email" name="email" required />
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
                         <input
                                 type="password"
+                                name="password"
                                 class="password"
                                 placeholder="Enter your password"
                                 required
@@ -35,7 +36,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Login Now" />
+                        <input type="submit" value="Login Now" name="submit" />
                     </div>
                 </form>
             </div>

@@ -34,7 +34,7 @@
         </ul>
         <ul class="logout list-style-none">
             <li>
-                <a href="#">
+                <a href="../pages/logout.php">
                     <i class="fa fa-sign-out" aria-hidden="true"></i>
                     <span class="link-name">Logout</span>
                 </a>
