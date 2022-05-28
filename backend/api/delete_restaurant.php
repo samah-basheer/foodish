@@ -12,7 +12,7 @@ $response = [];
 if($query->execute()) {
     $response["success"] = true;
 } else {
-    $response["success"] = $query->error;
+    $response["success"] = false;
 
 }
 echo json_encode($response);
