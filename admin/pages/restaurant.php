@@ -1,8 +1,11 @@
 <?php include '../includes/header.php' ?>
 <?php include '../includes/sidebar.php' ?>
     <div class="pt-5">
-        <div class="title mt-1 mb-2">
+        <div class="title mt-1 mb-2 d-flex justify-space-between">
             <h1>Restaurants</h1>
+            <div>
+                <a href="../../admin/pages/add_restaurant.php" class="add-new">Add Restaurant</a>
+            </div>
         </div>
     </div>
     <div class="container restaurant-loop" id="restaurants">

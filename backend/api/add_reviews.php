@@ -9,7 +9,6 @@ $rating = $_POST["rating"];
 
 $query = $mysqli->prepare("INSERT INTO reviews(user_id, restaurant_id, review, rating) VALUES (?, ?, ?, ?)");
 $query->bind_param("ssss", $user_id, $restaurant_id, $review, $rating);
-$query->execute();
 
 $response = [];
 if($query->execute()) {

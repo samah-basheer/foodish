@@ -29,7 +29,6 @@ $query = $mysqli->prepare("UPDATE restaurants
 SET name=?, description=?, open_hr=?, close_hr=?, pic_url=?
 WHERE id=?");
 $query->bind_param("sssssi", $name, $description, $open_hr, $close_hr, $pic_url, $id);
-$query->execute();
 
 $response = [];
 if($query->execute()) {

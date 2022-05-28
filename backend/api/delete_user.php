@@ -6,7 +6,6 @@ $id = $_POST["id"];
 
 $query = $mysqli->prepare("DELETE FROM users WHERE id=?");
 $query->bind_param("i", $id);
-$query->execute();
 
 $response = [];
 if($query->execute()) {

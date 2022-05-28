@@ -10,7 +10,6 @@ $pic_url = $_POST["pic_url"];
 
 $query = $mysqli->prepare("INSERT INTO users(first_name, last_name, email, password, pic_url) VALUES (?, ?, ?, ?, ?)");
 $query->bind_param("sssss", $first_name, $last_name, $email, $password, $pic_url);
-$query->execute();
 
 $response = [];
 if($query->execute()) {

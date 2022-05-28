@@ -8,7 +8,6 @@ $location = $_POST["location"];
 
 $query = $mysqli->prepare("INSERT INTO locations(restaurant_id, location) VALUES (?, ?)");
 $query->bind_param("ss", $restaurant_id, $location);
-$query->execute();
 
 $response = [];
 if($query->execute()) {
