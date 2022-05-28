@@ -42,9 +42,13 @@
                                     ?>
                                 </div>
                             </div>
-                            <div>
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                                <i class="fa fa-times" aria-hidden="true"></i>
+                            <div class="status">
+                                <?php
+                                if($review->status == 0) {
+                                    echo '<i class="fa fa-check" aria-hidden="true"></i>';
+                                    echo '<i class="fa fa-times" aria-hidden="true"></i>';
+                                }
+                                ?>
                             </div>
                         </div>
                         <p><?php echo $review->review; ?></p>
