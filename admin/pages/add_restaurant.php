@@ -5,7 +5,7 @@
         <h1>Add New Restaurant</h1>
     </div>
 </div>
-<div class="">
+<div class="mb-4">
     <div class="container restaurant-detail">
         <form action="../../backend/api/add_restaurants.php" method="post" enctype="multipart/form-data">
             <div class="mb-2">
@@ -23,6 +23,10 @@
                     <div class="mb-1">
                         <label>Add Restaurant Close Hour</label>
                         <input type="time" name="close_hr" value="">
+                    </div>
+                    <div class="mb-1 mt-2">
+                        <label>Add Restaurant Location</label>
+                        <input type="text" name="location">
                     </div>
                 </div>
                 <div class="col-md-4">
