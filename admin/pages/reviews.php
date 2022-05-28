@@ -42,11 +42,17 @@
                                     ?>
                                 </div>
                             </div>
-                            <div class="status">
+                            <div class="status d-flex actions">
                                 <?php
                                 if($review->status == 0) {
                                     echo '<i class="fa fa-check" aria-hidden="true"></i>';
-                                    echo '<i class="fa fa-times" aria-hidden="true"></i>';
+                                    echo '
+                                        <form action="../../backend/api/delete_review.php" method="post">
+                                            <input type="hidden" name="id" value="'.$review->id.'">
+                                            <button type="submit">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </button>
+                                        </form>';
                                 }
                                 ?>
                             </div>
