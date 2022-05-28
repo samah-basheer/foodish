@@ -22,6 +22,6 @@ if($query->execute()) {
     $response["success"] = false;
 }
 echo json_encode($response);
-header('location: http://groupproject/admin/pages/restaurant_details.php?id=7');
+header('location: http://groupproject/admin/pages/restaurant_details.php?id='.$id);
 
 ?>
