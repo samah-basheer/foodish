@@ -20,17 +20,24 @@ $rest_details = (json_decode($json));
                     <textarea rows="11"><?php echo $rest_details[0]->description ?></textarea>
                     <div class="mb-1">
                         <label>Edit Restaurant Open Hour</label>
-                        <input type="time" id="appt" name="appt">
+                        <input type="time" value="<?php echo $rest_details[0]->open_hr ?>">
                     </div>
                     <div class="mb-1">
                         <label>Edit Restaurant Close Hour</label>
-                        <input type="time" id="appt" name="appt">
+                        <input type="time" value="<?php echo $rest_details[0]->close_hr ?>">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <label>Edit Restaurant Featured Image</label>
                     <img src="../../assets/images/<?php echo $rest_details[0]->pic_url ?>">
                     <input type="file">
+                </div>
+                <div class="col-md-12 text-right">
+                    <div>
+                        <button type="submit" class="save-changes">
+                            Save Changes
+                        </button>
+                    </div>
                 </div>
             </div>
         </form>

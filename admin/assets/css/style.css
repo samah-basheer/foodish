@@ -1459,3 +1459,24 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
 .restaurant-detail label {
     font-size: 14px;
 }
+input[type=time] {
+    max-width: 200px;
+    width: 100%;
+}
+.save-changes {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    min-height: 32px;
+    line-height: 2.30769231;
+    padding: 0 12px;
+    text-shadow: none;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
