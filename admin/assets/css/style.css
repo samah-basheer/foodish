@@ -1423,3 +1423,7 @@ nav.close ~ .dashboard, nav.close ~ .dashboard .top-bar {
 .actions i {
     margin-left: 7px;
 }
+.actions button {
+    border: 0;
+    background: none;
+}
