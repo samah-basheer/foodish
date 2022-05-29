@@ -6,7 +6,7 @@ include("../connection.php");
 $email = $_POST["email"];
 $password = hash("sha256", $_POST["password"]);
 
-$query = $mysqli->prepare("SELECT id FROM users WHERE email=? AND password=?");
+$query = $mysqli->prepare("SELECT id FROM users WHERE email=? AND password=? AND role=0");
 $query->bind_param("ss", $email, $password);
 $query->execute();
 
@@ -20,7 +20,7 @@ $query->fetch();
 $response = [];
 if($num_rows == 0){
     $response["response"] = "User Not Found";
-    header('http://groupproject');
+    header('location: http://groupproject');
 }else{
     $response["response"] = "Logged in";
     $response["user_id"] = $id;
