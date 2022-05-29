@@ -51,29 +51,25 @@
             <div class="form signup">
                 <span class="title">Registration</span>
 
-                <form action="#">
+                <form action="./backend/api/add_users.php" method="post">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required />
+                        <input type="text" placeholder="Enter your first name" name="first_name" required />
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required />
+                        <input type="text" placeholder="Enter your last name" name="last_name" required />
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" name="email" required />
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
                         <input
                             type="password"
                             class="password"
+                            name="password"
                             placeholder="Create a password"
-                            required
-                        />
-                        <i class="uil uil-lock icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input
-                            type="password"
-                            class="password"
-                            placeholder="Confirm a password"
                             required
                         />
                         <i class="uil uil-lock icon"></i>
@@ -81,7 +77,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Login Now" />
+                        <input type="submit" value="Login Now" />
                     </div>
                 </form>
 

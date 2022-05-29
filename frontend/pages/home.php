@@ -1,4 +1,6 @@
-<?php include_once '../includes/header.php'; ?>
+<?php
+include_once '../includes/header.php';
+?>
     <div class="about">
         <div class="image-sec">
             <img src="../assets/images/about-bg-6-2.png" alt="" />
