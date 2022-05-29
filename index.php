@@ -34,15 +34,6 @@
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
 
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck" />
-                            <label for="logCheck" class="text">Remember me</label>
-                        </div>
-
-                        <a href="#" class="text">Forgot password?</a>
-                    </div>
-
                     <div class="input-field button">
                         <input type="button" value="Login Now" />
                     </div>
@@ -86,15 +77,6 @@
                         />
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
-
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="sigCheck" />
-                            <label for="sigCheck" class="text">Remember me</label>
-                        </div>
-
-                        <a href="#" class="text">Forgot password?</a>
                     </div>
 
                     <div class="input-field button">
