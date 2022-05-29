@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resturant</title>
+    <title>FOODISH</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
             rel="stylesheet"
@@ -18,7 +18,7 @@
 <nav class="navbar">
     <div class="nav-content">
         <div class="logo">
-            <a href="#">FOODIES</a>
+            <a href="#">FOODISH</a>
         </div>
         <ul class="menu-list">
             <div class="icon cancel-btn">
