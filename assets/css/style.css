@@ -2,221 +2,420 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-html, body{
-  overflow-x:hidden;
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
 }
-.section-1 {
-  background: url("../images/background.JPG");
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::selection {
+  background: rgba(0, 123, 255, 0.3);
+}
+
+.nav-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #e63946;
+}
+
+.banner {
+  background: url("../images/banner.jpg") no-repeat;
+  height: 100vh;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width: 1230px) {
+  .nav-content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-content {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
+  }
+}
+
+/* about section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.image-sec {
+  text-align: center;
+  width: 50%;
+}
+
+.text-sec {
+  width: 50%;
+}
+
+.about .text-sec p {
+  padding: 20px 0;
+}
+
+@media (max-width:720px) {
+  .about {
+    display: block;
+    width: 100%;
+  }
+
+  .about .image-sec {
+    width: 100%;
+  }
+
+  .about .image-sec img {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .about .text-sec {
+    padding: 0px 35px;
+    text-align: justify;
+  }
+
+  .about .text-sec p {
+    padding: 20px 0;
+  }
+
+  .about .text-sec {
+    width: 100%;
+  }
+
+}
+
+/* all esturants */
+.our-resturants {
+  background-image: url("../images/food-bg-4-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  background-size: cover;
+  height: 100%;
   position: relative;
 }
 
-.top-nav {
+.our-resturants::before {
+  content: '';
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.content {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 4rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+/*  */
+.p-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  position: relative;
+}
+
+.resturant-slider-header {
+  padding: 0rem 0 4rem 0;
+}
+
+.resturant-box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.p-img-container {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+.p-img a,
+.p-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.p-img a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: contain;
+}
+
+.p-box-text {
+  min-height: 100px;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.resturant-name {
   display: flex;
   justify-content: space-between;
-  height: 80px;
 }
 
-.links {
-  margin-left: 65vw;
-  list-style: none;
-  display: flex;
-  gap: 2vw;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-.hyperlink{
-  text-decoration:none;
-  color:white;
-  white-space: nowrap;
-  overflow:hidden;
-  text-overflow: ellipsis;
-}
-
-.sign-up {
-  border: none;
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: white;
-  border-radius: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 2vh 3vw;
-  color: rgb(73, 73, 73);
-  cursor:pointer;
-  white-space: nowrap;
-  overflow:hidden;
-  text-overflow: ellipsis;
-}
-
-.middle-header{
-  margin-top:6vh;
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 30px;
-}
-
-.content-container {
-  padding: 30vh 0 10vh 0;
-  width: 50%;
-}
-
-.corner-text {
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color:white;
-  font-size:30px;
-}
-
-.section-2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 15vw;
-  flex-wrap: wrap;
-
-}
-
-.rider{
-  margin-top: 8vh;
-  margin-bottom: 2vh;
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-align: center;
-}
-
-.rider-header{
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-}
-
-.section-2-1 {
-  width: 50%;
-}
-
-.rider-text {
-  text-align: center;
+.resturant-name a.rest-title {
   font-size: 20px;
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-}
-
-.hyperlink2{
-  color:rgb(235, 23, 0);
-  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-decoration: none;
-  font-size: 19px;
+  color: #ffffff;
 }
 
-.section-3 {
-  width:100%;
-  height: auto;
-  background-color: rgb(255, 240, 237);
+.resturant-name a.rest-title:hover {
+  color: #e63946;
+}
+
+.resturant-name .rest-status {
+  background-color: #e63946;
+  border-radius: 10px;
+  padding: 5px 11px 8px;
+}
+
+.rest-seperator {
+  background: #ffffff;
+  margin: 0.5rem 0;
+  height: 1px;
+}
+
+.p-box-text .resturant-description {
+  text-align: justify;
+  padding: .3rem 0px;
+}
+
+.resturants-view {
+  width: 100px;
+  height: 40px;
+  margin: 2rem;
+  border: none;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.slides {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 8vw;
 }
 
-.section-3 > img {
-  width: 50%;
-  height:50%;
-  margin-top: 2vh;
+@media (max-width:720px) {
+  .slides {
+    display: block;
+  }
+
+  .resturant-box {
+    margin: 1rem 0;
+  }
 }
 
-.wrapper {
+
+/* footer */
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
   text-align: center;
 }
 
-.section-4 {
-  margin-top:4vh;
-  margin-bottom:4vh;
-  width:100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 20vw;
-}
-
-.section-4 > img {
-  width: 50%;
-  height:50%;
-  margin-top: 2vh;
-}
-
-.footer{
+.footer .row {
   width: 100%;
-  height: 100px;
-  display: flex;
-  background-color: rgb(228, 228, 228);
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
- 
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
 }
 
-.social-media{
-  display: flex;
-  gap: 2vw;
-  white-space: nowrap;
-
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
-@media (max-width:750px) {
-  .links{
-    margin: 0 auto;
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width:720px) {
+  .footer {
+    text-align: center;
+    padding: 5%;
   }
 
-  .middle-header{
-    margin-top: 10vh;
-    font-size: 15px;
-    white-space: nowrap;
-  }
-  
-  .hyperlink{
-    font-size: 20px;
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
   }
 
-  .content-container{
-    padding: 20vh 0 8vh 0;
-    width:70%;
-    margin-left:1vw;
-  }
-
-  .sign-up{
-    padding: 1vh 4vw;
-    font-size: 20px;
-  }
-
-  .rider{
-      flex: 0 0 100%;
-  }
-
-  .corner-text{
-    font-size: 20px;
-  }
-
-  .section-3 > img{
-    width:70%;
-  }
-
-  .section-4 > img{
-    width:70%;
-  }
-
-  .footer{
-    gap:40px;
+  .footer .row a i {
+    margin: 0% 3%;
   }
 }

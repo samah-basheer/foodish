@@ -1,75 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title></title>
-  </head>
-  <body>
-    <div class="section-1">
-        <div class="top-nav">
-          <ul class="links">
-            <li><a class="hyperlink" href="wwww.google.com">About Us</a></li>
-            <li><a class="hyperlink" href="wwww.google.com">Log In</a></li>
-            <li>
-            <button class="sign-up">Sign Up</button>
-            </li>    
-          </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-content">
+        <div class="logo">
+            <a href="#">FOODIES</a>
         </div>
-        <div class="middle-header"><h1>Restaurants and more,<br> delivered to your door</h1></div>
-        <div class="content-container">
-          <div class="corner-text">
-            <h2>Every Flavor Welcome</h2>
-            <p> From your neighborhood sushi spot to the burger and fries you crave, choose from over 300,000 local and national favorites across the U.S., Canada and Australia.</p>
-          </div>
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resturants</a></li>
+            <li><a href="#">Rating</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
     </div>
-    <div class="section-2">
-      <div class="rider">
-        <img src="assets/images/rider.png">
-        <h2 class="rider-header">Become a Dasher<h2>
-        <p class="rider-text">As a delivery driver</p>
-        <p class="rider-text"> you'll make reliable money—working</p>
-        <p class="rider-text">anytime, anywhere</p>
-        <a href="" class="hyperlink2">Get started here</a>
-      </div>
-      <div class="rider">
-        <img src="assets/images/store.png">
-        <h2 class="rider-header">Become a Partner<h2>
-        <p class="rider-text">Grow your business and reach</p>
-        <p class="rider-text">new customers by partnering</p>
-        <p class="rider-text">with us.</p>
-        <a href="" class="hyperlink2">Partner with us</a>
-      </div>
+</nav>
+<div class="banner"></div>
+<div class="about">
+    <div class="image-sec">
+        <img src="./assets/images/about-bg-6-2.png" alt="" />
     </div>
-    <div class="section-3">
-      <img src="assets/images/all_in_one.png">
-      <div class="wrapper">
-      <h2 class="rider-header">It's all in here<h2>
-        <p class="rider-text">Discover local, on-demand delivery or Pickup</p>
-        <p class="rider-text">from restaurants, nearby grocery and convenience</p>
-        <p class="rider-text">stores, and more.</p>
-      </div>
+    <div class="text-sec">
+        <h1>Discover Our <span style="color: #e63946">Story</span></h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+            commodi doloribus natus. Distinctio rerum repellendus incidunt magni
+            molestias sapiente, amet cumque commodi aspernatur corporis nulla
+            tempore qui facere veniam rem ea assumenda!
+        </p>
     </div>
-    <div class="section-4">
-      <div class="wrapper">
-      <h2 class="rider-header">International Cuisines<h2>
-        <p class="rider-text">We have different kinds of food</p>
-        <p class="rider-text">From all over the world.</p>
-      </div>
-      <img src="assets/images/food.png">
+</div>
+
+<div class="our-resturants">
+    <div class="content">
+        <div class="p-slider">
+            <h1 class="resturant-slider-header">Top Resturants</h1>
+            <div class="slides">
+                <div class="resturant-box">
+                    <div class="p-img-container">
+                        <div class="p-img">
+                            <a href="">
+                                <img src="./assets/images/malek.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-box-text">
+                        <p class="resturant-name">
+                            <a href="#" class="rest-title"><span>Malek Taouk</span></a>
+                            <span class="rest-status">open</span>
+                        </p>
+                        <hr class="rest-seperator" />
+                        <p class="resturant-description">
+                            Malak al Tawouk Restaurant is the most popular Tawouk
+                            restaurant chain, specializing in original recipes, providing
+                            Professional management and offering great service.
+                        </p>
+                    </div>
+                    <div class="returant-view"></div>
+                </div>
+                <div class="resturant-box">
+                    <div class="p-img-container">
+                        <div class="p-img">
+                            <a href="">
+                                <img src="./assets/images/malek.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-box-text">
+                        <p class="resturant-name">
+                            <a href="#" class="rest-title"><span>Malek Taouk</span></a>
+                            <span class="rest-status">open</span>
+                        </p>
+                        <hr class="rest-seperator" />
+                        <p class="resturant-description">
+                            Malak al Tawouk Restaurant is the most popular Tawouk
+                            restaurant chain, specializing in original recipes, providing
+                            Professional management and offering great service.
+                        </p>
+                    </div>
+                    <div class="returant-view"></div>
+                </div>
+                <div class="resturant-box">
+                    <div class="p-img-container">
+                        <div class="p-img">
+                            <a href="">
+                                <img src="./assets/images/malek.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-box-text">
+                        <p class="resturant-name">
+                            <a href="#" class="rest-title"><span>Malek Taouk</span></a>
+                            <span class="rest-status">open</span>
+                        </p>
+                        <hr class="rest-seperator" />
+                        <p class="resturant-description">
+                            Malak al Tawouk Restaurant is the most popular Tawouk
+                            restaurant chain, specializing in original recipes, providing
+                            Professional management and offering great service.
+                        </p>
+                    </div>
+                    <div class="returant-view"></div>
+                </div>
+            </div>
+            <button class="resturants-view">View All</button>
+        </div>
     </div>
+</div>
+
+<footer>
     <div class="footer">
-      <a href="">Privacy Policy</a>
-      <p> Copyright 2022 Foodish. All Rights Reserved. <p>
-      <div class="social-media">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-pinterest"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div>
+
+        <div class="row">Copyright © 2021 - All rights reserved</div>
     </div>
-  </body>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
 </html>
