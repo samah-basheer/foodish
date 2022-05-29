@@ -49,8 +49,7 @@
                 </form>
 
                 <div class="login-signup">
-              <span class="text"
-              >Not a member?
+              <span class="text">Not a member?
                 <a href="#" class="text signup-link">Signup now</a>
               </span>
                 </div>
