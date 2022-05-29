@@ -1400,6 +1400,7 @@ select {
 .resturant-name .rest-status {
   border-radius: 10px;
   padding: 5px 11px 8px;
+  color: #ffffff;
 }
 .rest-status.open {
   background-color: rgb(36, 150, 63);
@@ -1508,4 +1509,33 @@ select {
 .resturants-view a {
   text-decoration: none;
   color: #333;
+}
+.restaurant-details .rest-img img {
+  max-width: 100%;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.restaurant-details .title {
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.3rem;
+  margin: 0.8rem 0px 0.6rem;
+  max-width: 80%;
+  color: rgb(28, 28, 28);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.restaurant-details .description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgb(105, 105, 105);
+  max-width: 56%;
+  padding: 0px 0px 0.4rem;
 }

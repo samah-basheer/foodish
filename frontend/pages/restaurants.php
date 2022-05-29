@@ -5,37 +5,27 @@ include_once '../includes/header.php';
     $jsonurl = "http://groupproject/backend/api/get_restaurants.php";
     $json = file_get_contents($jsonurl);
     $rest_arr = (json_decode($json));
+    $current_time = date("H:i:s");
 ?>
+<div class="container pt-4 pb-5">
+    <div class="row justify-space-between">
 <?php
+    $i = 0;
     foreach ($rest_arr as $rest) {
+        if($i % 3 == 0 ) {
+            echo '</div><div class="row justify-space-between pt-3">';
+        }
 ?>
-    <div class="resturant-box">
-        <div class="p-img-container">
-            <div class="p-img">
-                <a href="">
+            <div class="restaurant-details col-md-4">
+                <div class="rest-img">
                     <img src="../assets/images/<?php echo $rest->pic_url; ?>" alt="" />
-                </a>
+                </div>
+                <div class="rest-detail">
+                    <p class="title"><?php echo $rest->name; ?></p>
+                    <p class="description"><?php echo $rest->description; ?></p>
+                </div>
             </div>
-        </div>
-        <div class="p-box-text">
-            <p class="resturant-name">
-                <a href="#" class="rest-title"><span><?php echo $rest->name; ?></span></a>
-
-                <?php
-                if($rest->open_hr < $current_time && $current_time < $rest->close_hr) {
-                    echo '<span class="rest-status open">open</span>';
-                } else {
-                    echo '<span class="rest-status close">closed</span>';
-                }
-                ?>
-                </span>
-            </p>
-            <hr class="rest-seperator" />
-            <p class="resturant-description">
-                <?php echo $rest->description; ?>
-            </p>
-        </div>
-        <div class="returant-view"></div>
-    </div>
-<?php } ?>
+<?php $i++; } ?>
+</div>
+</div>
 <?php include_once '../includes/footer.php'; ?>
