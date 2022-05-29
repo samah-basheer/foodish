@@ -25,6 +25,7 @@ include_once '../includes/header.php';
                     $jsonurl = "http://groupproject/backend/api/get_restaurants.php";
                     $json = file_get_contents($jsonurl);
                     $rest_arr = (json_decode($json));
+                    $current_time = date("H:i:s");
 
                     foreach (array_slice($rest_arr, 0, 3) as $rest) {
                     ?>
@@ -39,7 +40,15 @@ include_once '../includes/header.php';
                         <div class="p-box-text">
                             <p class="resturant-name">
                                 <a href="#" class="rest-title"><span><?php echo $rest->name; ?></span></a>
-                                <span class="rest-status">open</span>
+                                <span class="rest-status">
+                                <?php
+                                if($rest->open_hr < $current_time && $current_time < $rest->close_hr) {
+                                    echo 'Open now';
+                                } else {
+                                    echo 'closed';
+                                }
+                                ?>
+                                </span>
                             </p>
                             <hr class="rest-seperator" />
                             <p class="resturant-description">
