@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FOODISH</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="frontend/assets/css/style.css" />
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -13,14 +13,14 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="./assets/images/foodish-logo.png">
+    <link rel="icon" type="image/x-icon" href="frontend/assets/images/foodish-logo.png">
 </head>
 <body>
 <nav class="navbar">
     <div class="nav-content">
         <div class="logo">
             <a href="/">
-                <img src="./assets/images/foodish-logo.png" style="max-width: 50px;">
+                <img src="frontend/assets/images/foodish-logo.png" style="max-width: 50px;">
                 <span style="margin-left: 12px;">FOODISH</span>
             </a>
         </div>
@@ -41,7 +41,7 @@
 <div class="banner"></div>
 <div class="about">
     <div class="image-sec">
-        <img src="./assets/images/about-bg-6-2.png" alt="" />
+        <img src="frontend/assets/images/about-bg-6-2.png" alt="" />
     </div>
     <div class="text-sec">
         <h1>Discover Our <span style="color: #e63946">Story</span></h1>
@@ -63,7 +63,7 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="">
-                                <img src="./assets/images/malek.jpg" alt="" />
+                                <img src="frontend/assets/images/malek.jpg" alt="" />
                             </a>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="">
-                                <img src="./assets/images/malek.jpg" alt="" />
+                                <img src="frontend/assets/images/malek.jpg" alt="" />
                             </a>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="p-img-container">
                         <div class="p-img">
                             <a href="">
-                                <img src="./assets/images/malek.jpg" alt="" />
+                                <img src="frontend/assets/images/malek.jpg" alt="" />
                             </a>
                         </div>
                     </div>
@@ -154,6 +154,6 @@
     </div>
 </footer>
 
-<script src="./assets/js/main.js"></script>
+<script src="frontend/assets/js/main.js"></script>
 </body>
 </html>
