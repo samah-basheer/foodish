@@ -17,10 +17,10 @@ include_once '../includes/header.php';
     $i = 0;
     foreach ($rest_arr as $rest) {
         if($i % 3 == 0 ) {
-            echo '</div><div class="row justify-space-between pt-3">';
+            echo '</div><div class="row justify-space-between">';
         }
 ?>
-            <div class="restaurant-details col-md-4">
+            <div class="restaurant-details col-md-4 pt-2">
                 <div class="rest-img">
                     <img src="../assets/images/<?php echo $rest->pic_url; ?>" alt="" />
                 </div>
