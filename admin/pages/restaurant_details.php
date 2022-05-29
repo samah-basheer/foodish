@@ -30,7 +30,7 @@ $rest_details = (json_decode($json));
                 </div>
                 <div class="col-md-4">
                     <label>Edit Restaurant Featured Image</label>
-                    <img src="../../assets/images/<?php echo $rest_details[0]->pic_url ?>">
+                    <img src="../../frontend/assets/images/<?php echo $rest_details[0]->pic_url ?>">
                     <input type="file" accept="image/*" name="pic_url">
                 </div>
                 <div class="col-md-12 text-right">

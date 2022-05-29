@@ -32,7 +32,7 @@
             <div class="col-md-6 mb-1">
                 <div class="restaurant d-flex">
                     <div>
-                        <img src="../../assets/images/<?php echo $rest->pic_url ?>">
+                        <img src="../../frontend/assets/images/<?php echo $rest->pic_url ?>">
                     </div>
                     <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
