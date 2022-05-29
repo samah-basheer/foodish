@@ -18,7 +18,10 @@
 <nav class="navbar">
     <div class="nav-content">
         <div class="logo">
-            <a href="#">FOODISH</a>
+            <a href="/">
+                <img src="./assets/images/foodish-logo.png" style="max-width: 50px;">
+                <span style="margin-left: 12px;">FOODISH</span>
+            </a>
         </div>
         <ul class="menu-list">
             <div class="icon cancel-btn">
