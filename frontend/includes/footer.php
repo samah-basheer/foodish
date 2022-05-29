@@ -1,11 +1,5 @@
 <footer>
     <div class="footer">
-        <div class="row">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
 
         <div class="row">
             <ul>
@@ -17,7 +11,11 @@
             </ul>
         </div>
 
-        <div class="row">Copyright © 2021 - All rights reserved</div>
+        <div class="container">
+            <div class="row">
+                <p class="text-center">Copyright © 2021 - All rights reserved</p>
+            </div>
+        </div>
     </div>
 </footer>
 

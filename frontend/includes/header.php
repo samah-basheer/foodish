@@ -35,10 +35,8 @@ if(!isset($_SESSION['loggedin'])) {
             <div class="icon cancel-btn">
                 <i class="fas fa-times"></i>
             </div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Resturants</a></li>
-            <li><a href="#">Rating</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./home.php">Home</a></li>
+            <li><a href="./restaurants.php">Resturants</a></li>
             <li><a href="../pages/logout.php">Logout</a></li>
         </ul>
         <div class="icon menu-btn">

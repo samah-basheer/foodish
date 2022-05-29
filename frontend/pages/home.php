@@ -59,7 +59,7 @@ include_once '../includes/header.php';
                     </div>
                     <?php } ?>
                 </div>
-                <button class="resturants-view">View All</button>
+                <button class="resturants-view"><a href="./restaurants.php">View All</a></button>
             </div>
         </div>
     </div>
