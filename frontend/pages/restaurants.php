@@ -21,6 +21,7 @@ include_once '../includes/header.php';
         }
 ?>
             <div class="restaurant-details col-md-4 pt-2">
+                <a href="./restaurant-details.php?id=<?php echo $rest->id; ?>">
                 <div class="rest-img">
                     <img src="../assets/images/<?php echo $rest->pic_url; ?>" alt="" />
                 </div>
@@ -45,6 +46,7 @@ include_once '../includes/header.php';
                         <p class="description"><?php echo $rest->description; ?></p>
                     </div>
                 </div>
+                </a>
             </div>
 <?php $i++; } ?>
 </div>

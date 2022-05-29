@@ -1517,7 +1517,7 @@ select {
   object-fit: cover;
   border-radius: 15px;
 }
-.restaurant-details .title {
+.restaurant-details .title, .single-rest .title {
   line-height: 1.2;
   font-weight: 500;
   text-align: left;
@@ -1528,7 +1528,7 @@ select {
   overflow: hidden;
   white-space: nowrap;
 }
-.restaurant-details .description {
+.restaurant-details .description, .single-rest .description {
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0px;
@@ -1548,4 +1548,10 @@ select {
 }
 .reviews i {
   font-size: 10px;
+}
+.restaurant-details a {
+  text-decoration: none;
+}
+.single-rest img {
+  max-width: 100%;
 }
