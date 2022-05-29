@@ -322,9 +322,14 @@
 }
 
 .resturant-name .rest-status {
-  background-color: #e63946;
   border-radius: 10px;
   padding: 5px 11px 8px;
+}
+.rest-status.open {
+  background-color: rgb(36, 150, 63);
+}
+.rest-status.close {
+  background-color: #e63946;
 }
 
 .rest-seperator {

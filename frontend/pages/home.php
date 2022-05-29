@@ -40,12 +40,12 @@ include_once '../includes/header.php';
                         <div class="p-box-text">
                             <p class="resturant-name">
                                 <a href="#" class="rest-title"><span><?php echo $rest->name; ?></span></a>
-                                <span class="rest-status">
+
                                 <?php
                                 if($rest->open_hr < $current_time && $current_time < $rest->close_hr) {
-                                    echo 'Open now';
+                                    echo '<span class="rest-status open">open</span>';
                                 } else {
-                                    echo 'closed';
+                                    echo '<span class="rest-status close">closed</span>';
                                 }
                                 ?>
                                 </span>
