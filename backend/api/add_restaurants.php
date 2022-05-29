@@ -9,7 +9,7 @@ $close_hr = $_POST["close_hr"];
 $pic_url = $_FILES["pic_url"]["name"];
 $location = $_POST['location'];
 
-$target_dir = "../../assets/images/";
+$target_dir = "../../frontend/assets/images/";
 $target_file = $target_dir . basename($_FILES["pic_url"]["name"]);
 move_uploaded_file($_FILES["pic_url"]["tmp_name"], $target_file);
 
