@@ -6,6 +6,10 @@ include_once '../includes/header.php';
     $json = file_get_contents($jsonurl);
     $rest_arr = (json_decode($json));
     $current_time = date("H:i:s");
+
+    $jsonurlRating = "http://groupproject/backend/api/get_ratings.php";
+    $jsonRating = file_get_contents($jsonurlRating);
+    $rating_arr = (json_decode($jsonRating));
 ?>
 <div class="container pt-4 pb-5">
     <div class="row justify-space-between">
@@ -21,8 +25,25 @@ include_once '../includes/header.php';
                     <img src="../assets/images/<?php echo $rest->pic_url; ?>" alt="" />
                 </div>
                 <div class="rest-detail">
-                    <p class="title"><?php echo $rest->name; ?></p>
-                    <p class="description"><?php echo $rest->description; ?></p>
+                    <div class="d-flex justify-space-between align-items">
+                        <p class="title"><?php echo $rest->name; ?></p>
+                        <span class="reviews"><?php
+                            $rating_exist = false;
+                            foreach ($rating_arr as $rating) {
+                                if($rating->restaurant_id == $rest->id) {
+                                    echo number_format($rating->rating, 1);
+                                    $rating_exist = true;
+                                }
+                            }
+                            if ($rating_exist == false ) {
+                                echo 0;
+                            }
+                            ?> <i class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="description"><?php echo $rest->description; ?></p>
+                    </div>
                 </div>
             </div>
 <?php $i++; } ?>

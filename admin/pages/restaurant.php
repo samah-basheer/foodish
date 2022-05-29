@@ -73,7 +73,8 @@
                                 if ($rating_exist == false ) {
                                     echo 0;
                                 }
-                                ?> <i class="fa fa-star" aria-hidden="true"></i></span>
+                                ?> <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
                         </div>
                     </div>
                 </div>

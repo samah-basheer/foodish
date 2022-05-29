@@ -1539,3 +1539,13 @@ select {
   max-width: 56%;
   padding: 0px 0px 0.4rem;
 }
+.reviews {
+  background-color: rgb(36, 150, 63);
+  color: white;
+  padding: 3px 0.4rem;
+  font-size: 15px;
+  border-radius: 0.6rem;
+}
+.reviews i {
+  font-size: 10px;
+}
