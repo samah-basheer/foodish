@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once '../includes/header.php';
 ?>
 <?php
@@ -36,13 +37,13 @@ include_once '../includes/header.php';
                     <div class="restaurant d-flex">
                         <div class="initial-name">
                             <div>
-                                <span><?php echo substr($review->first_name, 0, 1); ?></span>
+                                <span><?php echo ucfirst(substr($review->first_name, 0, 1)); ?></span>
                             </div>
                         </div>
                         <div class="pl-1 w-100">
                             <div class="d-flex justify-space-between align-items">
                                 <div class="d-flex">
-                                    <h3><?php echo $review->first_name. ' '. $review->last_name ?></h3>
+                                    <h3><?php echo ucfirst($review->first_name). ' '.ucfirst($review->last_name); ?></h3>
                                     <div class="review-stars">
                                         <?php
                                         for ($j = 0; $j < $review->rating; $j++) {
@@ -68,8 +69,10 @@ include_once '../includes/header.php';
             </div>
             <div class="add-review pt-2">
                 <h3 class="pb-2">Add your review</h3>
-                <form action="" method="post">
+                <form action="../../backend/api/add_reviews.php" method="post">
+                    <input type="hidden" value="<?php echo $_GET['id']; ?>" name="restaurant_id">
                     <textarea rows="8" placeholder="Any review? Add yours here." name="review"></textarea>
+                    <input type="number" min="0" max="5" name="rating">
                     <p class="text-right">
                         <button type="submit" class="add-review-btn mt-1">Submit</button>
                     </p>
