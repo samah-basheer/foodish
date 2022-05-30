@@ -50,7 +50,6 @@ include_once '../includes/header.php';
                                 ?>
                                 </span>
                             </p>
-                            <hr class="rest-seperator" />
                             <p class="resturant-description">
                                 <?php echo $rest->description; ?>
                             </p>

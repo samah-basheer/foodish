@@ -1347,7 +1347,7 @@ select {
   flex-direction: column;
   width: 300px;
   padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   margin: 0 20px;
 }
@@ -1408,13 +1408,6 @@ select {
 .rest-status.close {
   background-color: #e63946;
 }
-
-.rest-seperator {
-  background: #ffffff;
-  margin: 0.5rem 0;
-  height: 1px;
-}
-
 .p-box-text .resturant-description {
   text-align: justify;
   padding: .3rem 0px;
