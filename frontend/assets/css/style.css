@@ -1555,3 +1555,31 @@ select {
 .single-rest img {
   max-width: 100%;
 }
+.review-single {
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  border-radius: 20px;
+  padding: 12px 12px 7px 12px;
+}
+.review-stars {
+  font-size: 11px;
+}
+.reviews-loop .fa-star {
+  color: #d3d3d3;
+}
+.checked {
+  color: orange!important;
+}
+.restaurant-name {
+  color: #e63946;
+}
+.initial-name > div {
+  width: 50px;
+  height: 50px;
+  background-color: #e63946;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  color: white;
+}
