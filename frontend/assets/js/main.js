@@ -18,3 +18,18 @@ window.onscroll = () => {
         ? navbar.classList.add("sticky")
         : navbar.classList.remove("sticky");
 };
+
+function userVerification() {
+    let user_id = localStorage.getItem('user_id');
+    if(user_id === null) {
+        window.location.replace("http://groupproject/");
+    }
+}
+userVerification();
+
+let logout_button = document.getElementById("logout");
+logout_button.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.removeItem("user_id");
+    window.location.replace("http://groupproject/");
+});

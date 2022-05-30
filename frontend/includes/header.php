@@ -1,10 +1,3 @@
-<?php
-session_start();
-if(!isset($_SESSION['loggedin'])) {
-    header('location: http://groupproject/');
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +30,7 @@ if(!isset($_SESSION['loggedin'])) {
             </div>
             <li><a href="./home.php">Home</a></li>
             <li><a href="./restaurants.php">Resturants</a></li>
-            <li><a href="../pages/logout.php">Logout</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
         </ul>
         <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
