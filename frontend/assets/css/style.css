@@ -254,10 +254,6 @@
   h2 {
     font-size: 2rem
   }
-  .h3,
-  h3 {
-    font-size: 1.75rem
-  }
   .h4,
   h4 {
     font-size: 1.5rem
@@ -1552,6 +1548,7 @@ select {
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
   border-radius: 20px;
   padding: 12px 12px 7px 12px;
+  background-color: #ffffff;
 }
 .review-stars {
   font-size: 11px;
@@ -1599,4 +1596,7 @@ select {
   border-radius: 3px;
   white-space: nowrap;
   box-sizing: border-box;
+}
+.bg-color {
+  background-color: #f8f8f8;
 }

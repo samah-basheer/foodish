@@ -14,73 +14,79 @@ include_once '../includes/header.php';
     $review_details = (json_decode($json));
 
 ?>
-<div class="container pt-5 pb-5">
-    <div class="row single-rest">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-            <div>
-                <img src="../assets/images/<?php echo $rest_details[0]->pic_url; ?>">
+<section class="bg-color">
+    <div class="container pt-5 pb-5">
+        <div class="row single-rest">
+            <div class="col-md-6">
+                <div>
+                    <img src="../assets/images/<?php echo $rest_details[0]->pic_url; ?>">
+                </div>
             </div>
-            <div>
-                <p class="title"><?php echo $rest_details[0]->name; ?></p>
-                <p class="description"><?php echo $rest_details[0]->description; ?></p>
+            <div class="col-md-6">
+                <div>
+                    <p class="title"><?php echo $rest_details[0]->name; ?></p>
+                    <p class="description"><?php echo $rest_details[0]->description; ?></p>
+                </div>
             </div>
-            <div class="reviews-loop pt-5">
-                <h3 class="pb-2">Reviews</h3>
-                <?php
-                if(empty($review_details)) {
-                    echo 'No reviews yet.';
-                }
-                foreach ($review_details as $review) {
-                ?>
-                <div class="review-single mb-1">
-                    <div class="restaurant d-flex">
-                        <div class="initial-name">
-                            <div>
-                                <span><?php echo ucfirst(substr($review->first_name, 0, 1)); ?></span>
-                            </div>
-                        </div>
-                        <div class="pl-1 w-100">
-                            <div class="d-flex justify-space-between align-items">
-                                <div class="d-flex">
-                                    <h3><?php echo ucfirst($review->first_name). ' '.ucfirst($review->last_name); ?></h3>
-                                    <div class="review-stars">
-                                        <?php
-                                        for ($j = 0; $j < $review->rating; $j++) {
-                                            echo '<span class="fa fa-star checked"></span>';
-                                        }
-                                        for ($j = $review->rating; $j < 5; $j++) {
-                                            echo '<span class="fa fa-star"></span>';
-                                        }
-                                        ?>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="reviews-loop pt-5">
+                    <div class="add-review pt-2">
+                        <h3 class="pb-2">Add your review</h3>
+                        <form action="../../backend/api/add_reviews.php" method="post">
+                            <input type="hidden" value="<?php echo $_GET['id']; ?>" name="restaurant_id">
+                            <textarea rows="8" placeholder="Any review? Add yours here." name="review"></textarea>
+                            <input type="number" min="0" max="5" name="rating">
+                            <p class="text-right">
+                                <button type="submit" class="add-review-btn mt-1">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                    <h3 class="pb-2">Reviews</h3>
+                    <?php
+                    if(empty($review_details)) {
+                        echo 'No reviews yet.';
+                    }
+                    foreach ($review_details as $review) {
+                        ?>
+                        <div class="review-single mb-1">
+                            <div class="restaurant d-flex">
+                                <div class="initial-name">
+                                    <div>
+                                        <span><?php echo ucfirst(substr($review->first_name, 0, 1)); ?></span>
+                                    </div>
+                                </div>
+                                <div class="pl-1 w-100">
+                                    <div class="d-flex justify-space-between align-items">
+                                        <div class="">
+                                            <h3><?php echo ucfirst($review->first_name). ' '.ucfirst($review->last_name); ?></h3>
+                                            <div class="review-stars">
+                                                <?php
+                                                for ($j = 0; $j < $review->rating; $j++) {
+                                                    echo '<span class="fa fa-star checked"></span>';
+                                                }
+                                                for ($j = $review->rating; $j < 5; $j++) {
+                                                    echo '<span class="fa fa-star"></span>';
+                                                }
+                                                ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p><?php echo $review->review; ?></p>
+                                    <div class="text-right">
+                                        <span class="restaurant-name"><?php echo $review->name; ?></span>
                                     </div>
                                 </div>
                             </div>
-                            <p><?php echo $review->review; ?></p>
-                            <div class="text-right">
-                                <span class="restaurant-name"><?php echo $review->name; ?></span>
-                            </div>
                         </div>
-                    </div>
+                        <?php
+                    }
+                    ?>
                 </div>
-                <?php
-                }
-                ?>
             </div>
-            <div class="add-review pt-2">
-                <h3 class="pb-2">Add your review</h3>
-                <form action="../../backend/api/add_reviews.php" method="post">
-                    <input type="hidden" value="<?php echo $_GET['id']; ?>" name="restaurant_id">
-                    <textarea rows="8" placeholder="Any review? Add yours here." name="review"></textarea>
-                    <input type="number" min="0" max="5" name="rating">
-                    <p class="text-right">
-                        <button type="submit" class="add-review-btn mt-1">Submit</button>
-                    </p>
-                </form>
-            </div>
+            <div class="col-md-4"></div>
         </div>
-        <div class="col-md-2"></div>
     </div>
-</div>
-
+</section>
 <?php include_once '../includes/footer.php'; ?>
