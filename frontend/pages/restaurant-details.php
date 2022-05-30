@@ -66,6 +66,15 @@ include_once '../includes/header.php';
                 }
                 ?>
             </div>
+            <div class="add-review pt-2">
+                <h3 class="pb-2">Add your review</h3>
+                <form action="" method="post">
+                    <textarea rows="8" placeholder="Any review? Add yours here."></textarea>
+                    <p class="text-right">
+                        <button type="submit" class="add-review-btn mt-1">Submit</button>
+                    </p>
+                </form>
+            </div>
         </div>
         <div class="col-md-2"></div>
     </div>

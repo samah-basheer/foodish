@@ -1583,3 +1583,27 @@ select {
   font-size: 33px;
   color: white;
 }
+.add-review textarea {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-top: 8px;
+  border-radius: 10px;
+}
+.add-review-btn {
+  background: #e63946;
+  border-color: #e63946;
+  color: #fff;
+  text-decoration: none;
+  min-height: 32px;
+  line-height: 2.30769231;
+  padding: 0 12px;
+  text-shadow: none;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
