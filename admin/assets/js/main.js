@@ -28,3 +28,18 @@ setActivePath=function() {
     }
 };
 setActivePath();
+
+function userVerification() {
+    let user_id = localStorage.getItem('user_id');
+    if(user_id === null) {
+        window.location.replace("http://groupproject/admin/pages/login.php");
+    }
+}
+userVerification();
+
+let logout_button = document.getElementById("logout");
+logout_button.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.removeItem("user_id");
+    window.location.replace("http://groupproject/admin/pages/login.php");
+});

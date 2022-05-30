@@ -21,3 +21,34 @@ pwShowHide.forEach((eyeIcon) => {
         });
     });
 });
+
+//login via axios
+let login_button = document.getElementById("admin-login");
+login_button.addEventListener("click", function(event){
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    let data = new FormData();
+    data.append('email', email);
+    data.append('password', password);
+
+    let url = 'http://groupproject/backend/api/admin_login.php';
+
+    axios({
+        method: 'POST',
+        url: url,
+        data: data
+    })
+        .then(function (response) {
+            if(response.data['status']) {
+                console.log(response);
+                localStorage.setItem('user_id', response.data['user_id']);
+                window.location.href = "http://groupproject/admin/pages/dashboard.php";
+            } else {
+                let status = document.getElementById('status');
+                status.innerHTML = response.data['message'];
+            }
+        });
+
+});

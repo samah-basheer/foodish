@@ -1,7 +1,5 @@
 <?php
-session_start();
 include("../connection.php");
-
 
 $email = $_POST["email"];
 $password = hash("sha256", $_POST["password"]);
@@ -19,19 +17,12 @@ $query->fetch();
 
 $response = [];
 if($num_rows == 0){
-    $response["response"] = "User Not Found";
-    header('location: http://groupproject/admin/pages/login.php');
+    $response["status"] = false;
+    $response["message"] = "User Not Found";
 }else{
-    $response["response"] = "Logged in";
+    $response["status"] = true;
+    $response["message"] = "Logged in";
     $response["user_id"] = $id;
-    $_SESSION["loggedin"] = true;
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["id"] = $id;
-    header('location: http://groupproject/admin/pages/dashboard.php');
 }
 $json = json_encode($response);
 echo $json;
-
-
-
-

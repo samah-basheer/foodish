@@ -139,3 +139,6 @@
 .button input:hover {
     background-color: #e63946;
 }
+.login-response {
+    color: #e63946;
+}
