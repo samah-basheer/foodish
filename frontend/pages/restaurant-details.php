@@ -69,7 +69,7 @@ include_once '../includes/header.php';
             <div class="add-review pt-2">
                 <h3 class="pb-2">Add your review</h3>
                 <form action="" method="post">
-                    <textarea rows="8" placeholder="Any review? Add yours here."></textarea>
+                    <textarea rows="8" placeholder="Any review? Add yours here." name="review"></textarea>
                     <p class="text-right">
                         <button type="submit" class="add-review-btn mt-1">Submit</button>
                     </p>

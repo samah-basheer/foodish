@@ -3,7 +3,7 @@
 include("../connection.php");
 
 $user_id = $_POST["user_id"];
-$restaurant_id = $_POST["restaurant_id"];
+$restaurant_id = $_GET["id"];
 $review = $_POST["review"];
 $rating = $_POST["rating"];
 $status = 0;
@@ -18,5 +18,6 @@ if($query->execute()) {
     $response["success"] = false;
 }
 echo json_encode($response);
+header('location: http://groupproject/frontend/pages/restaurant-details.php?id='.$restaurant_id);
 
 ?>
