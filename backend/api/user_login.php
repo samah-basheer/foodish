@@ -1,7 +1,5 @@
 <?php
-session_start();
 include("../connection.php");
-
 
 $email = $_POST["email"];
 $password = hash("sha256", $_POST["password"]);
@@ -19,16 +17,11 @@ $query->fetch();
 
 $response = [];
 if($num_rows == 0){
-    $_SESSION["response"] = "Incorrect email and/or password.";
-    header('location: http://groupproject');
+    $response["status"] = false;
+    $response["message"] = "Incorrect email and/or password.";
 }else{
-    $response["response"] = "Logged in";
+    $response["status"] = true;
     $response["user_id"] = $id;
-    $_SESSION["loggedin"] = true;
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["id"] = $id;
-    $_SESSION["response"] = "";
-    header('location: http://groupproject/frontend/pages/home.php');
 }
 $json = json_encode($response);
 echo $json;

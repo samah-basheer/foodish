@@ -32,3 +32,33 @@ signUp.addEventListener("click", () => {
 login.addEventListener("click", () => {
     container.classList.remove("active");
 });
+
+//login via axios
+let login_button = document.getElementById("login-btn");
+login_button.addEventListener("click", function(event){
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    let data = new FormData();
+    data.append('email', email);
+    data.append('password', password);
+
+    let url = 'http://groupproject/backend/api/user_login.php';
+
+    axios({
+        method: 'POST',
+        url: url,
+        data: data
+    })
+        .then(function (response) {
+            if(response.data['status']) {
+                localStorage.setItem('user_id', response.data['user_id']);
+                window.location.href = "http://groupproject/frontend/pages/home.php";
+            } else {
+                let status = document.getElementById('status');
+                status.innerHTML = response.data['message'];
+            }
+        });
+
+});

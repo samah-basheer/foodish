@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,15 +18,16 @@ session_start();
             <div class="form login">
                 <span class="title">Login</span>
 
-                <form action="./backend/api/user_login.php" method="post">
+                <form action="#" method="post">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" name="email" required />
+                        <input type="text" placeholder="Enter your email" id="email" name="email" required />
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
                         <input
                             type="password"
                             class="password"
+                            id="password"
                             name="password"
                             placeholder="Enter your password"
                             required
@@ -38,14 +36,10 @@ session_start();
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
                     <div class="response">
-                        <?php
-                        if(isset($_SESSION["response"])) {
-                            echo '<p class="login-response">'.$_SESSION["response"].'</p>';
-                        }
-                        ?>
+                        <p class="login-response" id="status"></p>
                     </div>
                     <div class="input-field button">
-                        <input type="submit" value="Login Now" />
+                        <input type="submit" id="login-btn" value="Login Now" />
                     </div>
                 </form>
 
@@ -100,6 +94,7 @@ session_start();
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./frontend/assets/js/login.js"></script>
 </body>
 </html>
