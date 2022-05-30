@@ -29,7 +29,7 @@
                     </div>
                     <div class="pl-1 w-100">
                         <div class="d-flex justify-space-between align-items">
-                            <div class="d-flex">
+                            <div class="">
                                 <h3><?php echo $review->first_name. ' '. $review->last_name ?></h3>
                                 <div class="review-stars">
                                     <?php
