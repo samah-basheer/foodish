@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +37,13 @@
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
-
+                    <div class="response">
+                        <?php
+                        if(isset($_SESSION["response"])) {
+                            echo '<p class="login-response">'.$_SESSION["response"].'</p>';
+                        }
+                        ?>
+                    </div>
                     <div class="input-field button">
                         <input type="submit" value="Login Now" />
                     </div>
