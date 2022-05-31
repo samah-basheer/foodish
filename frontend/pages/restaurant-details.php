@@ -34,12 +34,12 @@ include_once '../includes/header.php';
                 <div class="reviews-loop pt-5">
                     <div class="add-review pt-2">
                         <h3 class="pb-2">Add your review</h3>
-                        <form action="../../backend/api/add_reviews.php" method="post">
-                            <input type="hidden" value="<?php echo $_GET['id']; ?>" name="restaurant_id">
-                            <textarea rows="8" placeholder="Any review? Add yours here." name="review"></textarea>
-                            <input type="number" min="0" max="5" name="rating">
+                        <form action="#" method="post">
+                            <input type="hidden" value="<?php echo $_GET['id']; ?>" name="restaurant_id" id="restaurant_id">
+                            <textarea rows="8" placeholder="Any review? Add yours here." name="review" id="review"></textarea>
+                            <input type="number" min="0" max="5" name="rating" id="rating">
                             <p class="text-right">
-                                <button type="submit" class="add-review-btn mt-1">Submit</button>
+                                <button class="add-review-btn mt-1" id="submit_review">Submit</button>
                             </p>
                         </form>
                     </div>

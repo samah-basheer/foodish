@@ -33,3 +33,13 @@ logout_button.addEventListener("click", function(event) {
     localStorage.removeItem("user_id");
     window.location.replace("http://groupproject/");
 });
+
+let submit_review = document.getElementById("submit_review");
+submit_review.addEventListener("click", function(event) {
+    event.preventDefault();
+    const user_id = localStorage.getItem("user_id");
+    const restaurant_id = document.getElementById("restaurant_id").value;
+    let review = document.getElementById("review").value;
+    console.log(review);
+    // window.location.replace("http://groupproject/");
+});
