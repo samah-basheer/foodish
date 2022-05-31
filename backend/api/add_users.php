@@ -12,14 +12,12 @@ $query->bind_param("ssss", $first_name, $last_name, $email, $password);
 
 $response = [];
 if($query->execute()) {
-    $response["success"] = true;
-    $_SESSION["loggedin"] = true;
-    $_SESSION["email"] = $_POST["email"];
-    $_SESSION["name"] = $_POST["first_name"];
-    header('location: http://groupproject/frontend/pages/home.php');
+    $response["status"] = true;
+    $response["message"] = "User Created";
+    $response["id"] = $mysqli->insert_id;
 } else {
-    $response["success"] = false;
-    header('location: http://groupproject/');
+    $response["status"] = false;
+    $response["message"] = "Fail to create new user.";
 }
 echo json_encode($response);
 
