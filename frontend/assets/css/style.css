@@ -1542,10 +1542,7 @@ select {
   line-height: 1.5;
   margin: 0px;
   text-align: left;
-  overflow: hidden;
-  white-space: nowrap;
   color: rgb(105, 105, 105);
-  max-width: 56%;
   padding: 0px 0px 0.4rem;
 }
 .reviews {

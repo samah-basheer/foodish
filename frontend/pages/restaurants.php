@@ -14,12 +14,12 @@ include_once '../includes/header.php';
 ?>
 <div class="container pt-4 pb-5">
     <h2>Restaurants</h2>
-    <div class="row justify-space-between">
+    <div class="row">
 <?php
     $i = 0;
     foreach ($rest_arr as $rest) {
         if($i % 3 == 0 ) {
-            echo '</div><div class="row justify-space-between">';
+            echo '</div><div class="row">';
         }
 ?>
             <div class="restaurant-details col-md-4 pt-2">
