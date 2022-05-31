@@ -57,6 +57,7 @@ include_once '../includes/header.php';
                         echo 'No reviews yet.';
                     }
                     foreach ($review_details as $review) {
+                        if($review->status == 1) {
                         ?>
                         <div class="review-single mb-1">
                             <div class="restaurant d-flex">
@@ -89,6 +90,7 @@ include_once '../includes/header.php';
                             </div>
                         </div>
                         <?php
+                        }
                     }
                     ?>
                 </div>
