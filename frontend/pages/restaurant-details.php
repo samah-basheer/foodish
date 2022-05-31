@@ -34,10 +34,17 @@ include_once '../includes/header.php';
                 <div class="reviews-loop pt-5">
                     <div class="add-review pt-2">
                         <h3 class="pb-2">Add your review</h3>
-                        <form action="#" method="post">
+                        <form method="post">
+                            <div class="rating">
+                                <input type="radio" class="stars" name="rating" value="5" id="5"><label for="5">☆</label>
+                                <input type="radio" class="stars" name="rating" value="4" id="4"><label for="4">☆</label>
+                                <input type="radio" class="stars" name="rating" value="3" id="3"><label for="3">☆</label>
+                                <input type="radio" class="stars" name="rating" value="2" id="2"><label for="2">☆</label>
+                                <input type="radio" class="stars" name="rating" value="1" id="1"><label for="1">☆</label>
+                            </div>
                             <input type="hidden" value="<?php echo $_GET['id']; ?>" name="restaurant_id" id="restaurant_id">
                             <textarea rows="8" placeholder="Any review? Add yours here." name="review" id="review"></textarea>
-                            <input type="number" min="0" max="5" name="rating" id="rating">
+                            <p id="status"></p>
                             <p class="text-right">
                                 <button class="add-review-btn mt-1" id="submit_review">Submit</button>
                             </p>

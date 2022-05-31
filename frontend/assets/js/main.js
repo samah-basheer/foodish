@@ -40,6 +40,33 @@ submit_review.addEventListener("click", function(event) {
     const user_id = localStorage.getItem("user_id");
     const restaurant_id = document.getElementById("restaurant_id").value;
     let review = document.getElementById("review").value;
-    console.log(review);
-    // window.location.replace("http://groupproject/");
+    let stars;
+
+    let rating = document.querySelectorAll(".stars");
+    rating.forEach(el => {
+        if(el.checked == true) {
+            stars = el.value;
+        }
+    })
+    let data = new FormData();
+    data.append('user_id', user_id);
+    data.append('restaurant_id', restaurant_id);
+    data.append('review', review);
+    data.append('rating', stars);
+
+    let url = 'http://groupproject/backend/api/add_reviews.php';
+
+    axios({
+        method: 'POST',
+        url: url,
+        data: data
+    })
+        .then(function (response) {
+            if(response.data['status']) {
+                location.reload();
+            } else {
+                let status = document.getElementById('status');
+                status.innerHTML = response.data['message'];
+            }
+        });
 });

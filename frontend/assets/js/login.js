@@ -52,11 +52,11 @@ login_button.addEventListener("click", function(event){
         data: data
     })
         .then(function (response) {
+            let status = document.getElementById('status');
             if(response.data['status']) {
                 localStorage.setItem('user_id', response.data['user_id']);
                 window.location.href = "http://groupproject/frontend/pages/home.php";
             } else {
-                let status = document.getElementById('status');
                 status.innerHTML = response.data['message'];
             }
         });
