@@ -34,6 +34,7 @@ logout_button.addEventListener("click", function(event) {
     window.location.replace("http://groupproject/");
 });
 
+// handle submit review
 let submit_review = document.getElementById("submit_review");
 submit_review.addEventListener("click", function(event) {
     event.preventDefault();
