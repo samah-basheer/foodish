@@ -4,20 +4,15 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-/* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
-
 ::selection {
   background: rgba(0, 123, 255, 0.3);
 }
@@ -1605,10 +1600,9 @@ select {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
-
-
-.rating > input{ display:none;}
-
+.rating > input{
+  display:none;
+}
 .rating > label {
   position: relative;
   width: 1.1em;
@@ -1616,7 +1610,6 @@ select {
   color: #FFD700;
   cursor: pointer;
 }
-
 .rating > label::before{
   content: "\2605";
   position: absolute;
