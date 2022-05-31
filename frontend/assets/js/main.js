@@ -76,6 +76,30 @@ if(submit_review) {
     });
 }
 
+// get user profile
+if(window.location.href === 'http://groupproject/frontend/pages/user_profile.php') {
+    const user_id = localStorage.getItem("user_id");
+
+    let data = new FormData();
+    data.append('id', user_id);
+
+    let url = 'http://groupproject/backend/api/get_user.php';
+
+    axios({
+        method: 'POST',
+        url: url,
+        data: data
+    })
+        .then(function (response) {
+            console.log(response.data[0]);
+            let fname = document.getElementById('fname');
+            let lname = document.getElementById('lname');
+
+            fname.value = response.data[0].first_name;
+            lname.value = response.data[0].last_name;
+        });
+}
+
 // update user profile
 let user_profile_btn = document.getElementById("user_profile_btn");
 if(user_profile_btn) {

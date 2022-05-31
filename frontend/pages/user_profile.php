@@ -18,7 +18,7 @@ include_once '../includes/header.php';
                 </div>
                 <div class="input">
                     <label>Last Name</label>
-                    <input type="text" value="Basheer" id="lname">
+                    <input type="text" value="" id="lname">
                 </div>
                 <div class="pt-3 text-right">
                     <button class="user-profile-btn" id="user_profile_btn">
