@@ -1,6 +1,7 @@
 <?php
 include_once '../includes/header.php';
 ?>
+<div class="restaurants-banner"></div>
 <?php
     $jsonurl = "http://groupproject/backend/api/get_restaurants.php";
     $json = file_get_contents($jsonurl);
@@ -12,6 +13,7 @@ include_once '../includes/header.php';
     $rating_arr = (json_decode($jsonRating));
 ?>
 <div class="container pt-4 pb-5">
+    <h2>Restaurants</h2>
     <div class="row justify-space-between">
 <?php
     $i = 0;
