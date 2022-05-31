@@ -1600,7 +1600,7 @@ select {
   padding-top: 8px;
   border-radius: 10px;
 }
-.add-review-btn {
+.add-review-btn , .user-profile-btn {
   background: #e63946;
   border-color: #e63946;
   color: #fff;
@@ -1652,4 +1652,30 @@ select {
 }
 textarea {
   border-color: #D3D3D3;
+}
+.user_profile img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user_profile .input {
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+.user_profile input[type=text] {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.user_profile .input label {
+  color: #aba9a9;
+  font-size: 12px;
 }

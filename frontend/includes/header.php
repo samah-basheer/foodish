@@ -30,6 +30,7 @@
             </div>
             <li><a href="./home.php">Home</a></li>
             <li><a href="./restaurants.php">Resturants</a></li>
+            <li><a href="../pages/user_profile.php">Profile</a></li>
             <li><a href="#" id="logout">Logout</a></li>
         </ul>
         <div class="icon menu-btn">
