@@ -1622,14 +1622,16 @@ select {
   position: absolute;
   opacity: 0;
 }
-
 .rating > label:hover:before,
 .rating > label:hover ~ label:before {
   opacity: 1 !important;
 }
-
 .rating > input:checked ~ label:before{
   opacity:1;
 }
-
-.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+.rating:hover > input:checked ~ label:before{
+  opacity: 0.4;
+}
+textarea {
+  border-color: #D3D3D3;
+}
